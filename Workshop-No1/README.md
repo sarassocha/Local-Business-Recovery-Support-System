@@ -48,3 +48,8 @@
 4. **Inventory Challenges**: 20% of small stores report normal inventory rotation, 0% report slow rotation
 5. **Post-Pandemic Spending**: 41.18% of customers spend more than before the pandemic
 
+- [Final Report](./report/workshop1.pdf)
+- [Raw Data](./raw-data/)
+- [Analysis Scripts](./analysis-scripts/)
+- [Methodology Documentation](./methodology-docs/)
+- [Supporting Materials](./supporting-materials/)
