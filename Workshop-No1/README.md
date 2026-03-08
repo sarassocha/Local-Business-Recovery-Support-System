@@ -43,9 +43,8 @@
 
 ### Key Findings
 1. **Foot Traffic**: Sunday midday shows significantly higher traffic in small stores areas compared to Saturday morning
-2. **Visit Motives**: [ ] % of customers come mainly for the food court, not specifically for shopping
+2. **Visit Motives**: 29% of customers come mainly for other activities like co-working or gym, not specifically for shopping
 3. **Weather Impact**: Weather conditions affect customer flow during both sessions
-4. **Purchase Behavior**: Only [ ] out of [ ] customers who enter small stores actually buy something
-5. **Inventory Challenges**: [ ] % of small stores report normal inventory rotation, [ ]% report slow rotation
-6. **Post-Pandemic Spending**: [ ]% of customers spend less than before the pandemic
+4. **Inventory Challenges**: 20% of small stores report normal inventory rotation, 0% report slow rotation
+5. **Post-Pandemic Spending**: 41.18% of customers spend more than before the pandemic
 
