@@ -8,7 +8,7 @@
 - Diego Alejandro Yañez Zabala  
 - Sebastian Zambrano Hurtado  
 
----
+<br>
 
 ## Project Description
 
@@ -18,13 +18,16 @@ The proposed system, *Local Business Recovery Support System*, aims to support s
 
 Using the results from the system analysis, a structured **system architecture** was designed to address the identified challenges such as uneven customer flow, dependency on external factors (weather, day), and changing post-pandemic behaviors.
 
----
+<br>
 
 ## Design Methodology
 
 The system design was developed following a structured engineering approach:
 
 ### 1. Analysis Review
+
+---
+
 Key findings from Workshop 01 were analyzed to identify:
 - High variability in customer flow
 - External factors affecting behavior (weather, day, time)
@@ -33,9 +36,11 @@ Key findings from Workshop 01 were analyzed to identify:
 
 These insights were translated into **system requirements**.
 
----
+<br>
 
 ### 2. System Architecture Design
+
+---
 
 A **layered architecture** was defined, composed of:
 
@@ -51,9 +56,11 @@ A **layered architecture** was defined, composed of:
 - **External Services (Integration Layer):**
   APIs for notifications and external integrations
 
----
+<br>
 
 ### 3. System Modules
+
+---
 
 The system was divided into key functional modules:
 
@@ -64,9 +71,11 @@ The system was divided into key functional modules:
 
 Each module was designed to handle specific responsibilities and interact through the backend.
 
----
+<br>
 
 ### 4. Interface and Integration Design
+
+---
 
 A detailed diagram was created to show how system components interact:
 
@@ -75,9 +84,11 @@ A detailed diagram was created to show how system components interact:
 - Modules interact with the database for data storage  
 - Backend integrates with external services (notifications, APIs)
 
----
+<br>
 
 ### 5. Risk and Complexity Management
+
+---
 
 Several system challenges were considered:
 
@@ -91,9 +102,10 @@ To address these, the system includes:
 - Modular architecture for flexibility  
 - Scalable design for future growth  
 
----
+<br>
 
 ### 6. Implementation Strategy
+---
 
 The system was designed with a clear technical approach:
 
@@ -104,9 +116,10 @@ The system was designed with a clear technical approach:
 
 The implementation is planned in phases to ensure scalability and maintainability.
 
----
+<br>
 
 ### 7. Performance and Optimization
+---
 
 The system includes strategies to improve performance:
 
@@ -119,7 +132,7 @@ Performance metrics considered:
 - System response time  
 - Data processing efficiency  
 
----
+<br>
 
 ## Deliverables
 
@@ -128,7 +141,7 @@ Performance metrics considered:
 - Interface and Integration Diagrams  
 - Updated Repository Documentation  
 
----
+<br>
 
 ## Key Outcomes
 
@@ -137,7 +150,7 @@ Performance metrics considered:
 - Identification of technical strategies and implementation approach  
 - Preparation for future development and system implementation  
 
----
+<br>
 
 ## Course Information
 
@@ -146,7 +159,7 @@ Performance metrics considered:
 **University:** Universidad Distrital Francisco José de Caldas  
 **Semester:** 2026-I  
 
----
+<br>
 
 ## Notes
 
