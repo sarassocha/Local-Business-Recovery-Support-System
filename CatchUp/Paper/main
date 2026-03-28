@@ -1,0 +1,208 @@
+\documentclass[conference]{IEEEtran}
+
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{placeins}
+
+\title{A Data-Driven Approach to Support Local Business Recovery in Shopping Malls}
+
+\author{
+\IEEEauthorblockN{Daniel Eduardo Rincón Vivas, Sara Sofía Socha Gil, Diego Alejandro Yañez Zabala, Sebastian Zambrano Hurtado}
+\IEEEauthorblockA{
+Computer Engineering Program\\
+Universidad Distrital Francisco José de Caldas\\
+Bogotá, Colombia\\
+March 2026}
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Following the COVID-19 pandemic, consumer behavior
+has substantially changed in shopping centers, impacting the performance of
+sustainability and management of small enterprises. Numerous local shops
+struggle to adjust to new spending habits, decreased spending,
+and heightened rivalry from big-box stores. This document
+suggests a data-driven system to assist local businesses.
+recovery through enhancing client interaction and maximizing
+inventory control. The outcomes of the observation
+and survey results show that the primary problem is not the absence of
+clients, but the absence of organized and easily accessible data.
+By combining environmental factors, consumer behavior, and
+By consolidating business data into a single system, small businesses can
+enhance decision-making, expand sales prospects, and adjust
+more successfully in light of the present state of the market.
+\end{abstract}
+
+\section{Introduction}
+
+In recent years, shopping malls have evolved from being purely commercial spaces into multifunctional environments where people not only shop, but also socialize, eat, work, and spend their leisure time. This transformation became even more evident after the COVID-19 pandemic, which significantly changed consumer behavior and expectations.
+
+Studies such as \cite{ref1,ref2} show that customers now prioritize experience, convenience, and value over traditional purchasing habits. Additionally, many consumers combine online and physical shopping, creating hybrid consumption patterns that challenge traditional retail models \cite{ref3,ref4}. This shift forces businesses to rethink how they interact with customers and how they manage their operations.
+
+Large retail chains have adapted effectively to these changes by adopting data-driven strategies. Among them is the application of
+digital platforms, integrated inventory systems, and analytics
+that enable them to comprehend client preferences, forecast
+demand, and streamline processes [5]. These capacities support
+give them a sizable competitive edge and enable them to
+react swiftly to shifts in the market.
+
+In contrast, small businesses face important limitations. Many of them rely on manual processes or fragmented sources of information, which reduces their ability to respond to customer needs in real time. As a result, they experience problems such as low sales conversion, inefficient inventory management, and loss of customers to larger competitors \cite{ref6}.
+
+Another important factor is the change in spending behavior. After the pandemic, a considerable percentage of customers reported reducing their expenses. This directly impacts small businesses, which depend heavily on frequent purchases. This situation increases the importance of making accurate and informed decisions.
+
+This creates a gap between customer demand and business supply. While customers are physically present in shopping malls, their needs are not always satisfied due to poor information management. Understanding this gap is essential to improving the performance and sustainability of small businesses.
+
+In this paper, we analyze the behavior of customers and small businesses within a real shopping mall environment. Based on this analysis, we propose a data-driven system that integrates customer behavior, environmental variables, and business data to support decision-making.
+
+\section{Methods and Materials}
+
+To understand the problem, a combination of qualitative and quantitative methods was used. This approach allowed obtaining a more complete and reliable understanding of the system.
+
+Direct observation was used to analyze how customers move within the shopping mall. This method allowed identifying high-traffic areas, peak hours, and patterns of behavior. It also helped detect zones where customer presence does not translate into sales.
+
+Customers and employees were surveyed. Consumers gave details about their purchasing habits, frequency of visits, and preferences. Workers shared information about inventory problems, sales patterns, and operational difficulties. The analysis was enhanced by this blend of viewpoints.
+
+Environmental analysis focused on external variables such as weather conditions, day of the week, and special events. These factors influence customer behavior and introduce variability into the system, making decision-making more complex.
+
+\subsection{System Representation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\columnwidth]{system_representation.png}
+\caption{General representation of the system.}
+\end{figure}
+
+\FloatBarrier
+
+\subsection{System Architecture}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.89\columnwidth]{architecture.png}
+\caption{System architecture.}
+\end{figure}
+
+\FloatBarrier
+
+\subsection{Data Flow Design}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\columnwidth]{diagramflow.png}
+\caption{Data flow design.}
+\end{figure}
+
+\FloatBarrier
+
+\subsection{System Requirements and Design}
+
+The system must provide detailed information about customer traffic, including variations based on time, day, and environmental conditions. This allows businesses to identify peak periods and prepare accordingly.
+
+Inventory monitoring is another key feature. The system detects low stock levels and identifies products with low rotation, allowing businesses to adjust their inventory strategies.
+
+The system also includes promotional tools that enable targeted marketing strategies. These tools are especially important in a context where customers have reduced their spending.
+
+A dashboard interface is used to display key metrics such as sales performance, customer flow, and inventory behavior. This interface must be simple and intuitive to ensure usability.
+
+Additionally, the system includes a recommendation mechanism based on customer behavior. This increases the probability of purchase and improves customer experience.
+
+From a technical perspective, the system follows a modular architecture. Each component operates independently, which improves scalability and maintainability. This design also allows future extensions without requiring major changes.
+
+\section{Results and Discussion}
+
+The collected data revealed several important patterns related to customer behavior and business performance.
+
+One of the most relevant findings is that high-traffic areas do not necessarily generate higher sales. For example, areas such as food courts and entertainment zones attract many visitors, but these visitors are often focused on leisure activities rather than shopping.
+
+Another important observation is the variability of customer behavior. During weekdays, customer flow is more stable and predictable, while weekends show higher variability. This suggests that different strategies should be applied depending on the day.
+
+Customer expectations have also changed. Many customers expect to find products quickly and efficiently. When they cannot find what they are looking for, they tend to switch to larger stores or online platforms.
+
+\subsection{Foot Traffic Analysis}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\columnwidth]{foottraffic.png}
+\caption{Foot traffic comparison.}
+\end{figure}
+
+\FloatBarrier
+
+\subsection{Customer Preferences}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\columnwidth]{VisitMotivesDistribution.png}
+\caption{Distribution of visit motives.}
+\end{figure}
+
+\FloatBarrier
+
+\subsection{Spending Behavior}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\columnwidth]{graphic1.png}
+\caption{Post-pandemic spending behavior.}
+\end{figure}
+
+\FloatBarrier
+
+\subsection{Inventory Analysis}
+
+Customers frequently reported that they could not find specific products in small businesses. This directly impacts sales and customer satisfaction.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\columnwidth]{graphic3.png}
+\caption{Inventory rotation and availability patterns.}
+\end{figure}
+
+\FloatBarrier
+
+This confirms that the main issue is not demand, but the ability of businesses to respond effectively to that demand.
+
+\subsection{System Evaluation and Risks}
+
+Several risks were identified during the analysis. One of the main risks is the variability in customer behavior, which makes demand difficult to predict.
+
+Another challenge is reduced customer spending, which directly affects sales performance.
+
+There is also resistance from some business owners to adopt new technologies or share their data.
+
+To address these challenges, the system includes strategies such as predictive analysis, targeted promotions, and user training.
+
+\section{Conclusions}
+
+This work analyzed the challenges faced by small businesses in shopping malls in a post-pandemic context, focusing on the relationship between customer behavior and business performance. The results confirm that the main limitation is not the absence of customers, but the lack of structured and accessible information that allows businesses to respond effectively to demand.
+
+Through the data collected, it was possible to identify key issues such as low conversion rates, inefficient inventory management, and a mismatch between customer expectations and product availability. Customers are present in shopping malls, but their needs are not always satisfied, which leads to lost sales opportunities.
+
+The proposed data-driven system addresses these challenges by integrating customer behavior, environmental variables, and business data into a unified platform. This approach allows business owners to make more informed decisions, improve inventory control, and better adapt to changing market conditions.
+
+Additionally, the system incorporates practical considerations such as usability, scalability, and data security, making it suitable for real-world implementation. Features such as inventory alerts, customer traffic analysis, and product recommendations provide direct value to small businesses.
+
+However, the effectiveness of the system depends on data availability and user adoption. Without consistent data input and active participation from business owners, the system’s performance may be limited. Addressing these challenges requires both technical solutions and organizational strategies.
+
+Future work should focus on implementing the system in real environments and evaluating its impact using measurable indicators such as sales performance, customer satisfaction, and inventory efficiency. The integration of predictive models and more advanced analytics could further enhance the system’s capabilities and long-term impact.
+
+\begin{thebibliography}{00}
+
+\bibitem{ref1} La República, “Los centros comerciales más visitados de Bogotá,” La República, 2024. [Online]. Available: https://www.larepublica.co/empresas/los-centros-comerciales-mas-visitados-de-bogota-4109027
+
+\bibitem{ref2} Redes de Seguridad, “Centro Comercial Titán Plaza Bogotá Colombia,” Redes de Seguridad, 2023. [Online]. Available: https://www.redesdeseguridad.net/proyecto/centro-comercial-titan-plaza-bogota-colombia/
+
+\bibitem{ref3} McKinsey \& Company, “State of the Consumer,” McKinsey Insights, 2023. [Online]. Available: https://www.mckinsey.com/industries/consumer-packaged-goods/our-insights/state-of-consumer
+
+\bibitem{ref4} Deloitte, “Global Retail Trends,” Deloitte Insights, 2023. [Online]. Available: https://www2.deloitte.com
+
+\bibitem{ref5} Harvard Business Review, “Competing in the Age of Data,” Harvard Business Review, 2020. [Online]. Available: https://hbr.org
+
+\bibitem{ref6} OECD, “Small Businesses in the Digital Economy,” OECD Publishing, 2021. [Online]. Available: https://www.oecd.org
+
+\end{thebibliography}
+
+\end{document}
