@@ -1,0 +1,150 @@
+{
+    "simulation": {
+        "name": "Titan Plaza Behavior Simulation",
+        "description": "Behavior-oriented simulation for small local store at Titan Plaza",
+        "simulation_time": 100,
+        "scenarios": ["baseline", "optimization", "failure"]
+    },
+    
+    "initial_conditions": {
+        "inventory": 100,
+        "sales": 0,
+        "customers": 0,
+        "alerts": 0,
+        "connectivity": true,
+        "sync_delay": 0,
+        "response_time": 1.0,
+        "weather": "sunny"
+    },
+    
+    "traffic_model": {
+        "description": "Customers per day based on day of week",
+        "monday_thursday": {
+            "min": 10,
+            "max": 18,
+            "days": [0, 1, 2, 3]
+        },
+        "friday": {
+            "min": 18,
+            "max": 28,
+            "day": 4
+        },
+        "weekend": {
+            "min": 25,
+            "max": 40,
+            "days": [5, 6]
+        },
+        "traffic_variation": {
+            "min": -3,
+            "max": 3,
+            "description": "Random daily variation"
+        }
+    },
+    
+    "weather_system": {
+        "change_probability": 0.3,
+        "effect_on_traffic": 0.7,
+        "description": "30% chance weather changes. Rain reduces traffic by 30%"
+    },
+    
+    "scenarios": {
+        "baseline": {
+            "description": "Normal conditions, no promotions",
+            "promotion_multiplier": 1.0,
+            "response_time": {
+                "min": 1.0,
+                "max": 2.0
+            },
+            "restock_time": 3,
+            "restock_amount": 25
+        },
+        "optimization": {
+            "description": "Promotions active, faster response",
+            "promotion_multiplier": 1.4,
+            "response_time": {
+                "min": 0.5,
+                "max": 1.5
+            },
+            "restock_time": 1,
+            "restock_amount": 40
+        },
+        "failure": {
+            "description": "Connectivity issues + rain effects",
+            "promotion_multiplier": 1.0,
+            "connectivity_failure_probability": 0.3,
+            "offline_traffic_reduction": 0.7,
+            "response_time_offline": {
+                "min": 2.0,
+                "max": 5.0
+            },
+            "response_time_online": {
+                "min": 1.0,
+                "max": 2.5
+            },
+            "sync_delay": {
+                "min": 2,
+                "max": 8
+            },
+            "restock_time": 3,
+            "restock_amount": 25
+        }
+    },
+    
+    "sales_model": {
+        "formula": "customers * promotion_multiplier * random(0.5, 1.0)",
+        "description": "Sales generated per day based on customer count and promotions"
+    },
+    
+    "inventory_management": {
+        "alert_threshold": 20,
+        "description": "Alert triggered when inventory falls below threshold"
+    },
+    
+    "connectivity_system": {
+        "failure_probability": 0.3,
+        "sync_delay_range": {
+            "min": 2,
+            "max": 8
+        },
+        "description": "Only active in failure scenario"
+    },
+    
+    "metrics_collected": [
+        "time_history",
+        "sales_history",
+        "inventory_history",
+        "customers_history",
+        "delay_history",
+        "response_history",
+        "alerts_history"
+    ],
+    
+    "gui_elements": {
+        "title": "Titan Plaza Behavior Simulation",
+        "size": "450x500",
+        "update_interval": 100
+    },
+    
+    "graphs": {
+        "sales_behavior": {
+            "title": "Sales Behavior",
+            "xlabel": "Days",
+            "ylabel": "Sales"
+        },
+        "inventory_levels": {
+            "title": "Inventory Levels",
+            "xlabel": "Days",
+            "ylabel": "Inventory"
+        },
+        "response_time": {
+            "title": "Response Time",
+            "xlabel": "Days",
+            "ylabel": "Response Time"
+        },
+        "sync_delay": {
+            "title": "Synchronization Delay",
+            "xlabel": "Days",
+            "ylabel": "Delay"
+        }
+    }
+}
